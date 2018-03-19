@@ -7,7 +7,7 @@
 		<title>React for Beginners</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white__custom.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -23,347 +23,248 @@
 	</head>
 	<body>
 		<div class="reveal">
+			<div class="red-border-top">
+				<img class="red-border-top__img" src="/images/cw-logo-alt-white1.png" alt="CW-logo">
+			</div>
 			<div class="slides">
-				<section>
-					<h1>Why we use Pre-processors</h1>
-					<h5>a walkthrough on what is and why we use pre-processors.</h5>
 
+				<!-- START -->
+				<section>
+					<h1>Pre-processors</h1>
+					<h5>An overview of pre-processors at Codeweavers.</h5>
+
+					<!-- NOTES -->
 					<aside class="notes">
-						test 123
+						NOTES HERE
 					</aside>
 				</section>
 
+				<!-- TO COVER -->
 				<section>
 					<h2>To cover:</h2>
 					<ul>
-						<li style="color: #36658a"><span style="color: #fff">What is a pre-processor</span></li>
-						<li style="color: #36658a"><span style="color: #fff">What are the benefits of using one</span></li>
-						<li style="color: #36658a"><span style="color: #fff">pre-processor examples</span></li>
-						<li style="color: #36658a"><span style="color: #fff">pre-processor in action</span></li>
-						<li style="color: #36658a"><span style="color: #fff">Why we use pre-processors at Codeweavers</span></li>
+						<li style="color: #e84238"><span style="color: #333">What is a pre-processor</span></li>
+						<li style="color: #e84238"><span style="color: #333">Why pre-processors exist</span></li>
+						<li style="color: #e84238"><span style="color: #333">CSS pre-processor examples</span></li>
+						<li style="color: #e84238"><span style="color: #333">Difference between compile and tanspile</span></li>
+						<li style="color: #e84238"><span style="color: #333">Javascript pre-processor examples</span></li>
+						<li style="color: #e84238"><span style="color: #333">Future of pre-processors</span></li>
 					</ul>
 				</section>
 
+				<!-- STORY -->
 				<section>
 					<h2>Story</h2>
+
+					<!-- NOTES -->
 					<aside class="notes">
-						Create a story
+						Create a story how we as people created something that has enchanced something else before it gets made.
 					</aside>
 				</section>
 
+				<!-- WHAT IS A PRE PROCESSOR -->
 				<section>
 					<h2>What is a pre-processor</h2>
+
+					<!-- NOTES -->
 					<aside class="notes">
-						In 2013 Websites were being built using html templates.
+						A computer program that modifies data to conform with the input requirements of another program.
 
-						HTML template dictate how you should abstract your website.
-
-						So in 2013 Facebook created a javascript library called React.
-
-						React breaks that mould by breaking down user interface abstraction into components.
-
-						Components can be used throughout the site which makes it easier to create large scale applications.
-
-						Components are make up of your view logic and your markup, by having both in one place it makes applications easier to maintain and extend.
+						So you can write code how you want and it will be complied down to the language that it needs to be in.
 					</aside>
 				</section>
 
+				<!-- WHY PRE PROCESSORS EXIST -->
 				<section>
-					<h2>React Philosophy</h2>
-					<img src="images/react-virtual-dom-image.png" alt="react virtual dom" style="width: 80%">
-					<aside class="notes">
-						How state changes
+					<h2>Why pre-processors exist</h2>
 
-						Virtual Dom
+					<!-- NOTES -->
+					<aside class="notes">
+						One advantage of using a pre-processor is that you can write code has not yet made it into that particular languages spec.
+						An advantage of this is that you can write cleaner code or use a way of writing that cannot be yet used and have it complied down to that language.
+
+						Another advantage of a pre-processor is that it can change the paradigm of how you would write the code for that language.
+						This can be a benefit if want a focus of one way of programming
 					</aside>
 				</section>
 
+				<!-- CSS PRE PROCESSOR OVERVIEW -->
 				<section>
-					<h2>Get Started</h2>
-					<pre class="fragment fade-up" style="box-shadow: none">
-						<code class="hljs" data-trim contenteditable>
-							$ npm install -g create-react-app
-						</code>
-					</pre>
-					<pre class="fragment fade-up" style="box-shadow: none">
-						<code class="hljs" data-trim contenteditable>
-							$ create-react-app demo-app
-						</code>
-					</pre>
+					<h2>CSS pre-processor examples</h2>
+					<div class="fragment fade-up">LESS</div>
+					<div class="fragment fade-up">SCSS</div>
+
+					<!-- NOTES -->
 					<aside class="notes">
-						So I now know about react, basic concepts of how it works and big companies use it, how do I get started?
-
-						Create React App
-
-						I frame in or Use online editor and create a react app online
-
-						What create react app is
+						NOTES HERE
 					</aside>
 				</section>
 
+				<!-- CSS PRE PROCESSOR EXAMPLES - LESS -->
 				<section>
-					<h2>Create React App</h2>
-					<iframe src="https://codesandbox.io/s/84n80qorn0" frameborder="0" title="create-react-app" width="1200" height="800"></iframe>
-					<aside class="notes">
-						What it contains
+					<h2>LESS examples</h2>
+					<h5>Here are some examples where we use LESS in our codebase</h5>
 
-						Create a component
-
-						Create a react component
-
-						Pass prop into the component
-
-						Create a functional component
-
-						Pass prop into the component
-					</aside>
-				</section>
-
-				<section>
-					<h2>React Extensions</h2>
-					<div style="display: flex; flex-direction: row;">
-						<div class="fragment fade-up">
-							<h5>React Router</h5>
-							<img src="/images/react-router.png" alt="React Router" style="border: 0; background: none; width: 300px; box-shadow: none;">
-						</div>
-						<div class="fragment fade-up">
-							<h5>Redux</h5>
-							<img src="/images/redux.png" alt="" style="border: 0; background: none; width: 300px; box-shadow: none;">
-						</div>
-						<div class="fragment fade-up">
-							<h5>Styled Components</h5>
-							<img src="/images/styled-components.png" alt="React Router" style="border: 0; background: none; width: 300px; box-shadow: none;">
-						</div>
-					</div>
-					<small class="fragment fade-up">
-						<a href="https://github.com/enaqx/awesome-react">https://github.com/enaqx/awesome-react</a> - List of react Extensions
-					</small>
-					<aside class="notes">
-						React Router
-
-						Styled Components
-
-						Redux
-
-						https://github.com/enaqx/awesome-react - List of react Extensions
-					</aside>
-				</section>
-
-				<section>
-					<h3>React Router</h3>
-
-					<div style="font-size: 32px">
-						<pre style="margin: 10px auto;"><code class="hljs" data-trim contenteditable>
-							$ npm install react-router-dom
-						</code></pre>
+					<div class="fragment fade-up">
+						Showroom
 					</div>
 
-					<div style="display: flex; flex-direction: row; flex-wrap: wrap; font-size: 32px">
-						<div style="width: 100%; flex: 1 0 auto;">
-							<pre style="margin: 10px 0; width: 100%;"><code class="hljs" data-trim contenteditable>
-								const BasicExample = () => (
-								  <Router>
-									<div>
-									  <ul>
-										<li><Link to="/">Home</Link></li>
-										<li><Link to="/about">About</Link></li>
-									  </ul>
-
-									  <Route exact path="/" component={Home}/>
-									  <Route path="/about" component={About}/>
-									</div>
-								  </Router>
-							</code></pre>
-						</div>
-
-						<div style="width: 100%; flex: 1 0 auto;">
-							<pre style="margin: 10px 0; width: 100%;"><code class="hljs" data-trim contenteditable>
-								const Home = ({ match }) => (
-								  <div>
-									<h2>Home</h2>
-									<ul>
-									  <li>
-										<Link to={`${match.url}/about`}>About Page</Link>
-									  </li>
-									</ul>
-								  </div>
-								)
-							</code></pre>
-						</div>
-					</div>
-					<aside class="notes">
-						Client Side routing is when Javascript effects the browsers url to mimic how the browser goes from one page to another.
-
-						It uses the history API to know wher the user has been and uses location move the user to the new 'page'
-					</aside>
-
-				</section>
-
-				<section>
-					<h3>Redux</h3>
-
-					<pre><code class="hljs" style="max-height: 100%" data-trim contenteditable>
-						// Action Types
-						const INCREMENT = "INCREMENT";
-
-						// Action Creators
-						function inc() {
-							return { type: INCREMENT }
-						}
-
-						// Reducers
-						function counter(state = 0, action) {
-							switch() {
-								case INCREMENT:
-									return state + 1
-								default:
-									return state
-							}
-						}
-
-						let counterStore = Redux.createStore(counter);
-						counterStore.dispatch(inc());
-					</code></pre>
-					<aside class="notes">
-						Redux exists due to a React limitation. Which is a react component cannot tell when a sibling component changes.
-
-						Action Types
-
-						Action Creators
-
-						Reducers
-
-						Store
-					</aside>
-				</section>
-
-				<section>
-					<h3>Styled Components</h3>
-
-					<div>
-						<pre><code class="hljs" data-trim contenteditable>
-							$ npm install --save styled-components
-						</code></pre>
+					<div class="fragment fade-up">
+						Plugins
 					</div>
 
-					<pre><code class="hljs" data-trim contenteditable>
-						const Title = styled.h1`
-						  font-size: 1.5em;
-						  text-align: center;
-						  color: palevioletred;
-						`;
+					<div class="fragment fade-up">
+						Lender Decision
+					</div>
 
-						const Wrapper = styled.section`
-						  padding: 4em;
-						  background: papayawhip;
-						`;
+					<div class="fragment fade-up">
+						Micro Sites
+					</div>
 
-						<Wrapper>
-						  <Title>Hello World!</Title>
-						</Wrapper>
-					</code></pre>
-				</section>
-
-				<section>
-					<h3>React Versus!</h3>
-
-					<img src="images/boxing-ring.jpg" alt="boxing ring">
-					<!--<img src="images/young-boxer.png" alt="react boxer">-->
-					<!--<img src="images/big-boxer.jpg" alt="angular boxer">-->
-
+					<!-- NOTES -->
 					<aside class="notes">
-						boxing match.
 
-						Lightweight boxer React. Small, fast and flexible.
-
-						Heavyweight boxer Angular. Big, slow and but has every feature possible.
 					</aside>
 				</section>
 
+				<!-- CSS PRE PROCESSOR IN ACTION - LESS -->
 				<section>
-					<h2>React v Rivals</h2>
-					<table style="font-size: 24px; padding-top: 2em;">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Author</th>
-								<th>Released</th>
-								<th>Language</th>
-								<th>Size (Gzip)</th>
-								<th>Performance</th>
-								<th>MVC</th>
-								<th>Binding</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>React</td>
-								<td>Facebook</td>
-								<td>
-									<div>Initial: March 2013</div>
-									<br>
-									<div>Latest version (16): Sept 2017</div>
-								<td>Javascript (ES6+) / JSX</td>
-								<td>34.8 kb</td>
-								<td>1.24</td>
-								<td>Only View in MVC</td>
-								<td>Uni-directional</td>
-							</tr>
-							<tr>
-								<td>Angular</td>
-								<td>Google</td>
-								<td>
-									<div>Initial: October 2010</div>
-									<br>
-									<div>Latest Version (5): Nov 2017</div>
-								</td>
-								<td>Typescript / HTML</td>
-								<td>60 kb</td>
-								<td>1.27</td>
-								<td>Yes</td>
-								<td>One / Two way</td>
-							</tr>
-						</tbody>
-					</table>
+					<h2>LESS in action</h2>
+					<h5>Here are some example of LESS functionality</h5>
+					<section data-background-iframe="https://codepen.io/anon/pen/wmggqa" data-background-interactive>
+						<h2>Iframe</h2>
+					</section>
+
+					<!-- NOTES -->
 					<aside class="notes">
-						Why am I only comparing react and angular?
-
-						<h5>Angular</h5>
-
-						<h6>Platform:</h6>
-
-						Angular is a platform, a large framework with a battery included approach. So Angular is almost a MVC framework for the frontend, compared to react which is just the View
-
-						<h6>Data binding:</h6>
-
-						Angular can be used as either one-way data binding or two-way data binding. Explain one way data binding, explain two-way data binding.
-
-						<h6>“Angular Way”:</h6>
-
-						Angular has its own recommendation in how you should write your code in a angular app. Its known the “Angular Way”. React does not care about how you write it, only in a few small cases (arrays not objects)
-
-						<h6>Typescript:</h6>
-
-						Angular is not written in javascript but in Typescript. Typescript is made by microsoft to add types in javascript. It pushes the OO way of programming. React is ES6+ and takes a more functional way of programming.
-
-						<h6>HTML:</h6>
-
-						Angular components are split into the Typescript file, the Style file and then the HTML file. The Style and HTML are referenced by the Typescript file. This makes it easier to switch between typical website making and that of components.
-						React has all logic and view in one file and also the style gets referenced.
-
-						<h6> Why is Angular Slower</h6>
-
-						Due to a startup time but its faster once the loading has been finished.
+						FUNCTIONS
+						VARABLES
+						IMPORTS & REFERANCES
+						NESTING
 					</aside>
 				</section>
 
+				<!-- CSS PRE PROCESSOR EXAMPLES - SCSS -->
+				<section>
+					<h2>SCSS examples</h2>
+					<h5>Here are some examples where we use SCSS in our codebase</h5>
+
+					<div class="fragment fade-up">
+						FCA Payment Search
+					</div>
+
+					<div class="fragment fade-up">
+						Customer Portal
+					</div>
+
+					<div class="fragment fade-up">
+						Identity
+					</div>
+
+					<div class="fragment fade-up">
+						Third Party Monitor
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<!-- CSS PRE PROCESSOR IN ACTION - SCSS -->
+				<section>
+					<h2>SCSS in action</h2>
+					<h5>Here are some example of SCSS functionality</h5>
+					<section data-background-iframe="https://codepen.io/anon/pen/wmggXM" data-background-interactive>
+						<h2>Iframe</h2>
+					</section>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						MIXINS
+						VARABLES
+						IMPORTS
+						PLACEHOLDERS
+						NESTING
+					</aside>
+				</section>
+
+				<!-- DIFFERENCE BETWEEN COMPILE AND TRANSPILE -->
+				<section>
+					<h2>Difference Between Compile & Transpile</h2>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						A compiler usually produces a directly usable artifact. Such as C# and C.
+
+						A transpiler produces another form of source code such as coffeescript (shrug) and javascript.
+					</aside>
+				</section>
+
+				<!-- JAVASCRIPT PRE PROCESSOR EXAMPLES -->
+				<section>
+					<h3>Javascript pre-processor examples</h3>
+
+					<div class="fragment fade-up">
+						Typescript
+					</div>
+
+					<div class="fragment fade-up">
+						...that's it.
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						Currently we are only using Typescript as a Javascript Transpiler and our only
+						pre-processor of sorts for javascript.
+					</aside>
+
+				</section>
+
+
+				<!-- JAVASCRIPT PRE PROCESSOR EXAMPLES -->
+				<section>
+					<h3>Typescript in Action</h3>
+
+					<section data-background-iframe="https://slides.com" data-background-interactive>
+						<h2>Iframe</h2>
+					</section>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						INTERFACE
+						TYPES
+						CLASSES
+						ES6/7 SYNTAX
+					</aside>
+
+				</section>
+
+				<!-- FUTURE OF PRE PROCESSORS-->
+				<section>
+					<h3>Future of pre processors</h3>
+
+
+					<!-- NOTES -->
+					<aside class="notes">
+						From the examples that I have covered, pre-processors are a great aid to developers as they
+						enhance what we can write today but what is there future?
+
+						I believe that in time, they will be less need for pre-processors to a point there are are not needed at all.
+						There is already work in progress in the Javascript and CSS community to take some parts of pro-processor
+						languages and add them into the language (CSS variables, static methods and classes).
+					</aside>
+				</section>
+
+				<!-- END SLIDE -->
 				<section>
 					<h2>Thank you</h2>
 					<small>
 						<p>Repo of my Presentation:</p>
-						<a href="https://github.com/Elliot-Evans-95/react-for-beginners-presentation">https://github.com/Elliot-Evans-95/react-for-beginners-presentation</a>
+						<a href="https://github.com/Elliot-Evans-95/pre-processors-presentation">https://github.com/Elliot-Evans-95/pre-processors-presentation</a>
 					</small>
 				</section>
+
 			</div>
 		</div>
 
