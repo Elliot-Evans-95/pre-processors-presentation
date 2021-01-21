@@ -37,7 +37,7 @@
     "grunt-retire": "1.0.8",
     "grunt-zip": "0.18.2",
     "mustache": "4.0.1",
-    "socket.io": "2.3.0"
+    "socket.io": "2.4.0"
   },
   "license": "MIT"
 }
